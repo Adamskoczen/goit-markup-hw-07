@@ -322,15 +322,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height=
   cursor: pointer;
 }
 
-.top-header__lists li:nth-child(1) a span {
-  font-size: 12px;
-}
-
-.top-header__lists li:nth-child(2) {
+.top-header__list {
   padding: 0 27px 0 50px;
 }
 
-.top-header ul {
+.top-header__lists {
   display: flex;
   list-style-type: none;
 }
