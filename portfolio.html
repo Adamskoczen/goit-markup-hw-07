@@ -20,28 +20,32 @@
   <body>
     <div class="container-header">
       <header class="top-header container">
-        <a class="logo-top" href="index.html"><span>Web</span>Studio</a>
-        <nav>
-          <ul>
-            <li><a class="link" href="index.html">Agencja</a></li>
+        <a class="top-header__logo" href="index.html"><span>Web</span>Studio</a>
+        <nav class="navigation">
+          <ul class="navigation__lists">
             <li>
-              <a class="link active-portfolio" href="portfolio.html">Portfolio</a>
+              <a class="navigation__link" href="index.html">Agencja</a>
             </li>
-            <li><a class="link" href="index.html">Kontakt</a></li>
+            <li>
+              <a class="navigation__link navigation__link--active-portfolio" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="navigation__link" href="index.html">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contacts-top">
+        <ul class="top-header__lists">
           <li>
-            <a class="contact link" href="mailto:info@devstudio.com"
-              ><svg class="icon" width="20" height="20">
+            <a class="top-header__link" href="mailto:info@devstudio.com"
+              ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="contact link" href="tel:+48111111111"
-              ><svg class="icon" width="20" height="20">
+          <li class="top-header__list">
+            <a class="top-header__link" href="tel:+48111111111"
+              ><svg class="top-header__icon" width="20" height="20">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +48 111 111 111</a

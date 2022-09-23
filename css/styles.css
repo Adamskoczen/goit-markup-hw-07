@@ -277,7 +277,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height=
   top: 31px;
 }
 
-.top-header .active-portfolio::after {
+.navigation__link--active-portfolio::after {
   position: relative;
   display: block;
   content: "";
@@ -292,6 +292,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height=
   display: flex;
   justify-content: flex-end;
   flex-grow: 2;
+  list-style-type: none;
   align-items: center;
 }
 
@@ -326,14 +327,16 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height=
   padding: 0 27px 0 50px;
 }
 
-.top-header__lists {
-  display: flex;
-  list-style-type: none;
-}
-
 .top-header__link {
   color: var(--color-contact);
   fill: var(--color-contact);
+  font-weight: 500;
+}
+
+.icon {
+  position: relative;
+  top: 5px;
+  right: 7px;
 }
 
 .footer-info__link,
