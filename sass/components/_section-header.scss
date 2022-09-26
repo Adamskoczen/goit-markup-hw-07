@@ -1,0 +1,58 @@
+.background-img {
+    width: 1600px;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--color-header-gadient),
+            var(--color-header-gadient)),
+        url("../images/img-header.jpg");
+    height: 600px;
+}
+
+.main-sections .section-header {
+    background-color: var(--color-bg-main);
+    padding: 0;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.section-header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section-header__title {
+    font-size: 44px;
+    line-height: 1.363;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+    margin: 0;
+    padding: 0 252px 30px;
+}
+
+.section-header__btn {
+    font-family: "roboto";
+    color: var(--color-white);
+    background-color: var(--color-logo);
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 41px 10px 42px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-header__btn:hover,
+.section-header__btn:focus {
+    background-color: var(--color-logo-dark);
+}

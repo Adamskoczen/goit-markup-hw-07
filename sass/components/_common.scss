@@ -1,0 +1,77 @@
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: var(--color-main);
+    font-size: 14px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.section-do__title,
+.section-team__title,
+.section-clients__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.171;
+}
+
+.navigation__link,
+.top-header__link,
+.footer-info__link {
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-main);
+    line-height: 1.173;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon,
+.section-lorem__icon {
+    position: relative;
+    top: 5px;
+}
+
+.top-header__logo,
+.footer-info__logo {
+    font-family: "Raleway";
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.173;
+    letter-spacing: 0.03em;
+}
+
+.main-sections .portfolio-sections {
+    letter-spacing: 0.03em;
+}
+
+.section-lorem__paragraph,
+.section-team__job {
+    color: var(--color-contact);
+}
+
+.section-header__btn:hover,
+.section-filter__btn:hover {
+    cursor: pointer;
+}
+
+.icon {
+    margin: auto;
+}
