@@ -38,7 +38,7 @@
 }
 
 .section-header__btn {
-    font-family: "roboto";
+    font-family: var(--font-roboto);
     color: var(--color-white);
     background-color: var(--color-logo);
     font-size: 16px;
@@ -52,7 +52,9 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-header__btn:hover,
-.section-header__btn:focus {
-    background-color: var(--color-logo-dark);
+.section-header__btn {
+    &:hover,
+    &:focus {
+        background-color: var(--color-logo-dark);
+    }
 }

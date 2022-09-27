@@ -31,7 +31,8 @@
     font-weight: 500;
 }
 
-.navigation__link--active::after {
+.navigation__link--active {
+    &::after {
     position: relative;
     display: block;
     content: "";
@@ -40,9 +41,11 @@
     background-color: var(--color-logo);
     border-radius: 2px;
     top: 31px;
+    }
 }
 
-.navigation__link--active-portfolio::after {
+.navigation__link--active-portfolio {
+    &::after {
     position: relative;
     display: block;
     content: "";
@@ -51,6 +54,7 @@
     background-color: var(--color-logo);
     border-radius: 2px;
     top: 31px;
+    }
 }
 
 .top-header__lists {
@@ -67,13 +71,24 @@
     right: 7px;
 }
 
-.navigation__link:hover,
-.navigation__link:focus,
-.top-header__link:hover,
-.top-header__link:focus {
-    color: var(--color-logo);
-    fill: var(--color-logo);
-    cursor: pointer;
+.navigation__link {
+
+    &:hover,
+    &:focus {
+        color: var(--color-logo);
+        fill: var(--color-logo);
+        cursor: pointer;
+    }
+}
+
+.top-header__link {
+
+    &:hover,
+    &:focus {
+        color: var(--color-logo);
+        fill: var(--color-logo);
+        cursor: pointer;
+    }
 }
 
 .top-header__list {

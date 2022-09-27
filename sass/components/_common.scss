@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: var(--font-roboto), var(--font-raleway), var(--font-sansserif);
     color: var(--color-main);
     font-size: 14px;
 }
@@ -51,7 +51,7 @@ ul li {
 
 .top-header__logo,
 .footer-info__logo {
-    font-family: "Raleway";
+    font-family: var(--font-raleway);
     text-decoration: none;
     font-size: 26px;
     line-height: 1.173;
@@ -67,9 +67,16 @@ ul li {
     color: var(--color-contact);
 }
 
-.section-header__btn:hover,
-.section-filter__btn:hover {
+.section-filter__btn {
+    &:hover {
     cursor: pointer;
+    }
+}
+
+.section-header__btn {
+    &:hover {
+    cursor: pointer;
+    }
 }
 
 .icon {
