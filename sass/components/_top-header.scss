@@ -6,11 +6,36 @@
     display: flex;
     height: 80px;
     align-items: center;
-}
-
-.top-header__logo {
-    color: var(--color-black);
-    padding-left: 15px;
+    &__logo {
+        color: var(--color-black);
+        padding-left: 15px;
+    }
+    &__lists {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 2;
+        list-style-type: none;
+        align-items: center;
+    }
+    &__list {
+        padding: 0 27px 0 50px;
+    }
+    &__icon {
+        position: relative;
+        top: 5px;
+        right: 7px;
+    }
+    &__link {
+        color: var(--color-contact);
+        fill: var(--color-contact);
+        font-weight: 500;
+        &:hover,
+        &:focus {
+            color: var(--color-logo);
+            fill: var(--color-logo);
+            cursor: pointer;
+        }
+    }
 }
 
 .span-logo {
@@ -19,84 +44,30 @@
 
 .navigation {
     flex-grow: 1;
-}
-
-.navigation__lists {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-evenly;
-}
-
-.navigation__link {
-    font-weight: 500;
-}
-
-.navigation__link--active {
-    &::after {
-    position: relative;
-    display: block;
-    content: "";
-    width: 53px;
-    height: 4px;
-    background-color: var(--color-logo);
-    border-radius: 2px;
-    top: 31px;
+    &__lists {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
     }
-}
-
-.navigation__link--active-portfolio {
-    &::after {
-    position: relative;
-    display: block;
-    content: "";
-    width: 58px;
-    height: 4px;
-    background-color: var(--color-logo);
-    border-radius: 2px;
-    top: 31px;
+    &__link {
+        font-weight: 500;
+        &--active {
+            &::after {
+            position: relative;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: var(--color-logo);
+            border-radius: 2px;
+            top: 31px;
+            }
+        }
+        &:hover,
+        &:focus {
+            color: var(--color-logo);
+            fill: var(--color-logo);
+            cursor: pointer;
+        }
     }
-}
-
-.top-header__lists {
-    display: flex;
-    justify-content: flex-end;
-    flex-grow: 2;
-    list-style-type: none;
-    align-items: center;
-}
-
-.top-header__icon {
-    position: relative;
-    top: 5px;
-    right: 7px;
-}
-
-.navigation__link {
-
-    &:hover,
-    &:focus {
-        color: var(--color-logo);
-        fill: var(--color-logo);
-        cursor: pointer;
-    }
-}
-
-.top-header__link {
-
-    &:hover,
-    &:focus {
-        color: var(--color-logo);
-        fill: var(--color-logo);
-        cursor: pointer;
-    }
-}
-
-.top-header__list {
-    padding: 0 27px 0 50px;
-}
-
-.top-header__link {
-    color: var(--color-contact);
-    fill: var(--color-contact);
-    font-weight: 500;
 }
